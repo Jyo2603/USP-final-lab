@@ -3,7 +3,7 @@
 #include <unistd.h>
 
 void h(int s) {
-    puts("Ctrl+C pressed");
+    puts("Ctrl+C pressed - Caught SIGINT");
     signal(SIGINT, SIG_DFL);
 }
 
