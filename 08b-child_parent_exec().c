@@ -22,8 +22,8 @@ int main() {
 #include <unistd.h>
 #include <stdio.h>
 
-int main(int argc, char *argv[]) {
-    if (access(argv[1], F_OK) == 0)
+int main(int c, char *v[]) {
+    if (access(v[1], F_OK) == 0)
         puts("File exists.");
     else
         puts("File doesn't exist.");
