@@ -15,7 +15,7 @@ int main(int c, char *v[]) {
     else puts("Unknown");
 }
 
-echo "hello" > file.txt
+/* echo "hello" > file.txt
 mkdir mydir
 ln -s file.txt mylink
 mkfifo myfifo
@@ -29,4 +29,4 @@ sudo mknod mychar c 1 7
 ./filetype myfifo
 ./filetype mysock
 sudo ./filetype myblock
-sudo ./filetype mychar
+sudo ./filetype mychar */
