@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <dirent.h>
 #include <sys/stat.h>
+#include <dirent.h>
 
 int main() {
     DIR *d = opendir(".");
