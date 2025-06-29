@@ -7,10 +7,13 @@ int main() {
     struct dirent *e;
     struct stat s;
 
+    printf("Size   Links   Atime    Inode    Name\n");
+
     while ((e = readdir(d))) {
         stat(e->d_name, &s);
-        printf("%lu %lu %u %ld %s\n",
-               s.st_ino, s.st_nlink, s.st_uid, s.st_size, e->d_name);
+        printf("%ld %lu %ld %lu %s\n",
+            s.st_size, s.st_nlink, s.st_atime, s.st_ino, e->d_name);
     }
+
     closedir(d);
 }
