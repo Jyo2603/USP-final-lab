@@ -31,6 +31,7 @@ chmod +x textinterpreter       # Make the script executable
 gcc echoall.c -o echoall       # Compile echoall
 gcc inter.c -o inter           # Compile inter
 ./inter                        # Run the program
+
 🧪 Output Example
 argv[0] = ./echoall
 argv[1] = my2
