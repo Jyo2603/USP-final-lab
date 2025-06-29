@@ -7,8 +7,6 @@ int main() {
     struct dirent *e;
     struct stat s;
 
-    printf("Size   Links   Atime    Inode    Name\n");
-
     while ((e = readdir(d))) {
         stat(e->d_name, &s);
         printf("%ld %lu %ld %lu %s\n",
