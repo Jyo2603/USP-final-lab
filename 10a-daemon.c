@@ -19,3 +19,8 @@ int main() {
     while (1)
         sleep(15);
 }
+
+/* gcc daemon.c -o daemon
+./daemon &            # Runs in background
+pgrep daemon          # To check PID
+ps aux | grep daemon  # Should show "?" under TTY */
