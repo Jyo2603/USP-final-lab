@@ -5,6 +5,7 @@
 
 int main() {
     int f = open("test.txt", O_WRONLY | O_TRUNC);
+    
     int d1 = dup(f);
     write(d1, "Hello from dup\n", 15);
 
