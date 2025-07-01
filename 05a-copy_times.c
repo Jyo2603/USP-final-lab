@@ -8,7 +8,6 @@ int main() {
       return perror("stat"), 1;
   
     struct utimbuf t = {s.st_atime, s.st_mtime};
-  
     if (utime("dest.txt", &t)) 
       return perror("utime"), 1;
   
